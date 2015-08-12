@@ -5,7 +5,8 @@ F90FLAGS = -ffixed-line-length-0 -ffree-form -O2 -fopenmp
 F90LIBS = -llapack -lblas -lgfortran 
 F90INCLUDE = 
 TARGETS = ./vector_disp
-prefix = /usr/local
+#prefix = /usr/local
+prefix = $(MY_BIN)
 PREFIX = $(prefix)
 
 all: $(TARGETS)
